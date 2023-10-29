@@ -23,7 +23,6 @@ services:
       context: setup/
       args:
         ELASTIC_VERSION: ${ELASTIC_VERSION}
-    init: true
     volumes:
       - ./setup/entrypoint.sh:/entrypoint.sh:ro,Z
       - ./setup/lib.sh:/lib.sh:ro,Z
